@@ -1,5 +1,5 @@
 # Junye-Assignment-2
-# Data folder was not included, you will need to provide your own data folder (github 100 fill limit)
+# Data folder was not included, you will need to provide your own data folder (github 100 file limit)
 CS3354 – Fall 2020 – Assignment 2 
 Due date: Wednesday, October. 28 at 11:55 p.m. 
 Project Title: Sentiment Analysis (stage 2) 
