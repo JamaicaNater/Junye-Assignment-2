@@ -93,25 +93,29 @@ public abstract class ReviewHandler extends AbstractReviewHandler {
 
     @Override
     public void loadSerialDB() {
+        System.out.println("Loading Database");
         try{
             FileInputStream fis = new FileInputStream(DATA_FILE_NAME);
             ObjectInputStream ois = new ObjectInputStream(fis);
 
             database = (HashMap<Integer,MovieReview>)ois.readObject();
-
+            // ** Sketchy code im not sure if we can cast as a hashmap
 
             fis.close();
         }
         catch (FileNotFoundException e)
         {
+            System.out.println("Failed to Load Database");
             e.printStackTrace();
         }
         catch (IOException e)
         {
+            System.out.println("Failed to Load Database");
             e.printStackTrace();
         }
         catch (ClassNotFoundException e)
         {
+            System.out.println("Failed to Load Database");
             e.printStackTrace();
         }
     }
